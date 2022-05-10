@@ -1,8 +1,8 @@
 本目录演示系统的代码由dev-c++的项目创建实现
 代码主体共四部分
   - main.cpp
-  - stu.h
+  - stu.h（主要的功能函数）
   - def.h
-  - addition.h
+  - addition.h（自己额外定义的部分功能函数）
  
 bin文件是测试系统时，文件操作保存生成的
