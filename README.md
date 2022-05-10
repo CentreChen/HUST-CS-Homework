@@ -1,4 +1,3 @@
-# Centre1_hello-world
-the place where dreams begin
-this is my first time to use github.
-I feel it an honor to be able to try something strang for me.
+# HUST CS Homework
+- 部分代码作业，长期不定时更新
+- 欢迎提出各种建议
