@@ -1,3 +1,3 @@
-# HUST CS Homework
+# HUST CS Homework（仅供参考！！！）
 - 部分代码作业，长期不定时更新
 - 欢迎提出各种建议
