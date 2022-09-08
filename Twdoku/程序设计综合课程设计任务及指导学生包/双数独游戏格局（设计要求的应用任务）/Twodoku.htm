@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://en.grandgames.net/multisudoku/twodoku -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script async="" src="./Twodoku_files/tag.js"></script><script>StartGameTime= new Date();</script>
+    
+    <meta name="viewport" content="minimum-scale=1, width=device-width,initial-scale=1, user-scalable=yes">
+    <title>Twodoku</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://en.grandgames.net/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://en.grandgames.net/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://en.grandgames.net/favicon-16x16.png">
+    <link rel="manifest" href="https://en.grandgames.net/site.webmanifest">
+    <style type="text/css">
+        .OnlyMobile {display: none;}
+    </style>
+    
+    
+<link rel="alternate" hreflang="ru" href="https://grandgames.net/multisudoku/twodoku">
+<link rel="alternate" hreflang="en" href="https://en.grandgames.net/multisudoku/twodoku">
+
+    
+    
+    
+    <meta property="og:url" content="https://en.grandgames.net/multisudoku/twodoku">
+    <link rel="canonical" href="https://en.grandgames.net/multisudoku/twodoku">
+    
+    <meta name="yandex-verification" content="1367d43d1987bd48">
+    <meta name="description" content="In Twodoku, two Sudoku puzzles are joined by a single 3x3 cell square.">
+    <meta property="og:title" content="Twodoku">
+    <meta property="og:description" content="In Twodoku, two Sudoku puzzles are joined by a single 3x3 cell square.">
+    <meta property="og:type" content="website">
+    <meta property="gg:id" content="0">
+    <meta property="gg:tbl" content="">
+    <meta name="keywords" content="">
+    <meta name="framepath" content="">
+    <meta name="mailru-verification" content="b56f07f087daa19a">
+    
+    
+    <script>
+    LG=[];
+    LG['sure']="Are you sure?";
+    LG['realleave']="Are you sure you want to leave the page?";
+    LG['nomoney']="You do not have enough game coins !";
+    LG['onlyreg']="Only for registered users!";
+    LG['notsolved']="Puzzle has not been solved yet!";
+    LG['ostalos']="It remains to fill in:";
+</script>
+
+
+    <script type="text/javascript">
+        SiteName='https://en.grandgames.net';
+        SiteLang='en';
+        GGID=0;
+        StaticURL='https://grandgames.net';
+        PUID=0;
+        UIND=0;
+        UserLogin='';
+        RU='/multisudoku/twodoku';
+        GlAT=1;
+        UserNA=0;
+        nowTheme='day';
+        nowFont='robotocond';
+        AllowPush=1;
+    </script>
+
+
+
+    <script src="./Twodoku_files/jquery321mdf.min.js"></script>
+    <script src="./Twodoku_files/top.js"></script>
+
+    <script>
+        console.log("gg_showbnav");
+        AppVersion=0;
+        SiteVersion=2471;
+        
+        
+        RBlock=110;
+        FeedID=110;
+        LastMesID=0;
+        CurUser=0;
+        currentURL='';
+        IsTNM=0;
+
+        
+        jQuery(document).ready(function() {
+            jQuery("a[href]:not('#linkru')").attr("href", function() {
+                return jQuery(this).attr("href").replace(/\/\/grandgames/, "//"+SiteLang+".grandgames");
+            });
+        });
+        
+
+        function stopError() {
+            return true;
+        }
+        window.onerror = stopError;
+    </script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Twodoku_files/css2" rel="stylesheet">
+
+<style type="text/css">
+   * {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:11pt;
+}
+</style>
+    <link id="maintheme" type="text/css" rel="stylesheet" href="./Twodoku_files/day.css" media="all">
+
+    <style type="text/css">
+    
+    .onlyapp {
+        display: none;
+    }
+    
+    </style>
+
+
+    
+
+
+    
+    
+<script async="" id="__lxGc__rtr" type="text/javascript" src="./Twodoku_files/360.js"></script>
+<script async="" type="text/javascript" src="./Twodoku_files/common_258.js"></script>
+<script async="" type="text/javascript" src="./Twodoku_files/consent_218600.js"></script>
+
+
+
+<script type="text/javascript" src="./Twodoku_files/web-vitals"></script></head>
+<body class="">
+<header>
+
+    <ul id="themeslist" class="autoclose tlsl">
+    <li onclick="AppQ(&#39;setlang&#39;,&#39;en&#39;);"><a class="ulink" href="https://en.grandgames.net/multisudoku/twodoku">English language</a></li>
+    <li onclick="AppQ(&#39;setlang&#39;,&#39;ru&#39;);"><a class="ulink" id="linkru" href="https://grandgames.net/multisudoku/twodoku">Русский язык</a></li>
+    <hr>
+    <li class="pointer" onclick="setTheme(&#39;day&#39;);"><img src="./Twodoku_files/day.png" alt=""> Day</li>
+    <li class="pointer" onclick="setTheme(&#39;sun&#39;);"><img src="./Twodoku_files/sun.png" alt=""> Sun</li>
+    <li class="pointer" onclick="setTheme(&#39;snow&#39;);"><img src="./Twodoku_files/snow.png" alt=""> Snow</li>
+    <li class="pointer" onclick="setTheme(&#39;night&#39;);"><img src="./Twodoku_files/night.png" alt=""> Night</li>
+    <hr>
+    <li class="pointer" onclick="setFont(&#39;robotocond&#39;);"><img src="./Twodoku_files/font.png" alt=""> Roboto</li>
+    <li class="pointer" onclick="setFont(&#39;arial&#39;);"><img src="./Twodoku_files/font.png" alt=""> Arial</li>
+    <li class="pointer" onclick="setFont(&#39;tahoma&#39;);"><img src="./Twodoku_files/font.png" alt=""> Tahoma</li>
+    
+</ul>
+    <div id="top_header">
+    <img id="leftmenubut" src="./Twodoku_files/menu.png" alt="Menu" class="pointer" onclick="ToggleMenu();">
+        <a class="noframe" href="https://en.grandgames.net/"> <img width="162" height="32" id="logo_site" src="./Twodoku_files/mainlogo2.png" alt="GrandGames"></a>
+
+     <input value="" autocomplete="off" id="gse_inp" placeholder="Search the site" oninput="GSEWork();">
+
+    <img width="32" height="32" src="./Twodoku_files/menu.png" alt="⍆" id="rblock_but" onclick="ToggleRBlock();" class="pointer noframe">
+    <img width="32" height="32" src="./Twodoku_files/umenu.png" alt="⛹" id="umenu_but" onclick="jQuery(&#39;#right_header&#39;).toggle();jQuery(&#39;.tlsl&#39;).hide();" class="pointer noframe">
+    <img width="32" height="32" src="./Twodoku_files/swide.png" alt="⎕" id="swide_but" onclick="MakeSiteWide();" title="Expand" class="pointer noframe">
+    <img width="32" height="32" src="./Twodoku_files/search.png" alt="⌕" id="topsearch_but" onclick="jQuery(&#39;#top_search&#39;).toggle();jQuery(&#39;#gse_inp&#39;).toggle();" class="pointer noframe">
+
+
+
+    <div id="right_header" class="noframe">
+            
+
+            <form action="https://en.grandgames.net/login" method="post" id="toploginform">
+                <span class="dashedlink" id="lfshow" onclick="ShowLF();">Log in</span>
+
+                <div id="logininputs" style="display: none">
+                    <a id="vktopbut" href="https://oauth.vk.com/authorize?client_id=2702475&amp;display=page&amp;v=5.53&amp;redirect_uri=//en.grandgames.net/index.php?place=login&amp;state=vk&amp;scope=4259842">
+                     <img src="./Twodoku_files/vklogin.gif" alt="VK" style="vertical-align:middle"> </a>
+                    <input style="width:80px;" name="login" type="text" value="" placeholder="Log in">
+                    <input style="width:80px;" name="pass" type="password" value="" placeholder="Password">
+                    <input type="hidden" class="gv3" name="gv3login" value="">
+                    <input type="submit" value=" OK ">
+                </div>
+                <a class="ml7" href="https://en.grandgames.net/reg"><img width="20" height="20" src="./Twodoku_files/reg.png" alt=""> Sign up</a>
+                <a class="ml7" href="https://en.grandgames.net/lenta"><img width="20" height="20" src="./Twodoku_files/lenta.png" alt="News"> <span class="unvm">Feed</span></a>
+
+
+            </form>
+            
+            <a id="themes" class="tls" style="display:inline;"><img class="ml7" width="20" height="20" src="./Twodoku_files/settings.png" alt="Settings" title="Settings"><span class="unvm">Settings</span></a>
+
+        </div>
+    </div>
+
+    
+
+
+</header>
+<img src="./Twodoku_files/hidefp.png" alt="X" id="fb_hider" onclick="TGFB();">
+    <div id="all">
+        <div id="main_panel">
+            <div id="rb_cont">
+                <div id="top_page_info" title="Info" abbr="info" class="toframebuttons" rel="infog">
+                    <div id="h1">
+                    
+
+                    <h1>Twodoku</h1>
+                        <div class="share42init" data-iconsize="24" style="float:right;"><span id="share42"><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(https://grandgames.net/js/share42/42icons_2.png) -0px 0 no-repeat" href="https://en.grandgames.net/multisudoku/twodoku#" data-count="vk" onclick="window.open(&#39;//vk.com/share.php?url=https%3A%2F%2Fen.grandgames.net%2Fmultisudoku%2Ftwodoku&amp;title=Twodoku&amp;image=undefined&amp;description=In%20Twodoku%2C%20two%20Sudoku%20puzzles%20are%20joined%20by%20a%20single%203x3%20cell%20square.&#39;, &#39;_blank&#39;, &#39;scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0&#39;);return false" title="Поделиться В Контакте" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(https://grandgames.net/js/share42/42icons_2.png) -24px 0 no-repeat" href="https://en.grandgames.net/multisudoku/twodoku#" data-count="fb" onclick="window.open(&#39;//www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fen.grandgames.net%2Fmultisudoku%2Ftwodoku&#39;, &#39;_blank&#39;, &#39;scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0&#39;);return false" title="Поделиться в Facebook" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(https://grandgames.net/js/share42/42icons_2.png) -48px 0 no-repeat" href="https://en.grandgames.net/multisudoku/twodoku#" data-count="twi" onclick="window.open(&#39;//twitter.com/intent/tweet?text=Twodoku&amp;url=https%3A%2F%2Fen.grandgames.net%2Fmultisudoku%2Ftwodoku&#39;, &#39;_blank&#39;, &#39;scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0&#39;);return false" title="Добавить в Twitter" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(https://grandgames.net/js/share42/42icons_2.png) -72px 0 no-repeat" href="https://en.grandgames.net/multisudoku/twodoku#" data-count="pin" onclick="window.open(&#39;//pinterest.com/pin/create/button/?url=https%3A%2F%2Fen.grandgames.net%2Fmultisudoku%2Ftwodoku&amp;media=undefined&amp;description=Twodoku&#39;, &#39;_blank&#39;, &#39;scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=600, height=300, toolbar=0, status=0&#39;);return false" title="Добавить в Pinterest" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(https://grandgames.net/js/share42/42icons_2.png) -96px 0 no-repeat" href="https://en.grandgames.net/multisudoku/twodoku#" data-count="odkl" onclick="window.open(&#39;//ok.ru/dk?st.cmd=addShare&amp;st._surl=https%3A%2F%2Fen.grandgames.net%2Fmultisudoku%2Ftwodoku&amp;title=Twodoku&#39;, &#39;_blank&#39;, &#39;scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0&#39;);return false" title="Добавить в Одноклассники" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(https://grandgames.net/js/share42/42icons_2.png) -120px 0 no-repeat" href="https://en.grandgames.net/multisudoku/twodoku" onclick="return fav(this);" title="Сохранить в избранное браузера" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(https://grandgames.net/js/share42/42icons_2.png) -144px 0 no-repeat" href="https://en.grandgames.net/multisudoku/twodoku#" onclick="print();return false" title="Распечатать" target="_blank"></a></span></span></div>
+                        
+                        <div id="top_navigation"><span id="bc_elm_1"><a href="https://en.grandgames.net/"><img width="16" height="16" src="./Twodoku_files/grandgames.png" alt=""> GrandGames.net → </a></span><span id="bc_elm_2"><a href="https://en.grandgames.net/multisudoku/"><img width="16" height="16" src="./Twodoku_files/multisudoku.png" alt=""> Multi-sudoku → </a></span><span id="bc_elm_3"><a href="https://en.grandgames.net/multisudoku/twodoku">Twodoku</a></span></div>
+                        
+
+                    </div>
+
+
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+
+
+                    
+
+                    
+
+
+                </div>
+
+
+
+                <div class="txt">Twodoku, or <b>double Sudoku</b>, is one of the simplest versions of Multisudoku. In Twodoku, two Sudoku puzzles are joined bya single 3x3 cell square. Given that he puzzles share only one 3x3 set of cells, some of the simplest Twodoku may sometimes allow solving each Sudoku separately.</div><div class="newpageform" title="filter">
+    <form method="GET" action="https://en.grandgames.net/index.php" id="ifinder" name="find_cross_form">
+
+        
+
+        
+
+        
+
+        <select name="notr" class="filtercontrol" autocomplete="off">
+            <option value="0">Any status</option>
+            <option value="1">All unsolved</option>
+            <option value="2">Not saved</option>
+            <option value="3">Saved</option>
+            <option value="4">Solved</option>
+            
+        </select>
+
+        <select id="tip" name="tip" class="filtercontrol" autocomplete="off">
+
+    <option value="0">Any type</option>
+
+    <option value="1">Sudoku</option>
+
+    <option value="2">Twodoku</option>
+
+    <option value="3">Doubledoku</option>
+
+    <option value="4">Samurai Sudoku </option>
+
+    <option value="5">Triple Sudoku</option>
+
+    <option value="6">Cross Sudoku</option>
+
+    <option value="7">Flower Sudoku</option>
+
+    <option value="8">Sohei Sudoku</option>
+
+    <option value="9">Butterfly Sudoku</option>
+
+    <option value="10">T-Joint Sudoku</option>
+
+</select>
+
+
+        <select name="sort" id="sorter" class="filtercontrol" autocomplete="off">
+    <option value="4">Popularity ↓</option>
+    
+    <option value="3">Speed ↓</option>
+    <option value="13">Speed ↑</option>
+    <option value="1">Size ↓</option>
+    <option value="11">Size ↑</option>
+    
+    <option value="2">Added ↓</option>
+    <option value="12">Added ↑</option>
+    <option value="0">Rating ↓</option>
+
+</select>
+
+
+<script>
+    $("#sorter").val();
+</script>
+
+
+<script>
+    saveLastSerch();
+</script>
+
+        
+
+
+        <span class="nobr">
+        
+        <span class="filtercheckbox" id="formobile" title="Suitable for smartphones">
+            <input type="hidden" name="formobile" id="formobile_v" value="0">
+            <img width="24" height="24" src="./Twodoku_files/formobile.png" alt="Suitable for smartphones">
+            <img width="24" height="24" class="filtercheckbox_cover" src="./Twodoku_files/no.png" alt="">
+        </span>
+        
+
+        
+        <span class="filterspin" id="lev" title="Level of difficulty" abbr="4">
+            <input type="hidden" name="lev" id="lev_v" value="0">
+            <img height="24" style="min-width: 24px;" src="./Twodoku_files/0.png" alt="">
+        </span>
+        
+        </span>
+
+        <script>
+            
+            $("select[name='tip']").val(2);
+            
+            $("select[name='sort']").val(0);
+            
+            $("select[name='drop']").val(0);
+            
+            $("select[name='notr']").val(0);
+            
+
+            setFilterFunc=function() {
+                // Handler for .ready() called.
+                
+                SetFilterBoxVal('formobile',0);
+                
+                
+                SetSpinVal('lev',0);
+                
+            };
+        </script>
+
+        
+
+        
+        
+        <input name="place" type="hidden" value="ag">
+        <input name="agurl" type="hidden" value="multisudoku">
+
+        <input id="finderbut" class="buttmain filtercontrol" style="width: 70px;" type="submit" value="Search">
+    </form>
+</div>
+
+
+
+<div class="topscrollglue"><div class="pages"><p> <b>1</b>  <a href="https://en.grandgames.net/index.php?page=2&amp;place=ag&amp;agurl=multisudoku&amp;sdir=twodoku&amp;tip=2"> 2 </a> <a href="https://en.grandgames.net/index.php?page=3&amp;place=ag&amp;agurl=multisudoku&amp;sdir=twodoku&amp;tip=2"> 3 </a> <a href="https://en.grandgames.net/index.php?page=4&amp;place=ag&amp;agurl=multisudoku&amp;sdir=twodoku&amp;tip=2"> 4 </a> <a href="https://en.grandgames.net/index.php?page=5&amp;place=ag&amp;agurl=multisudoku&amp;sdir=twodoku&amp;tip=2"> ► </a></p></div></div>
+<div class="no-mobile center" style="min-height: 250px;">
+    <div id="lx_664919" data-cnt="1" class="__lxG__multi __lxG__multi_lx_664919"></div><script class="__lxGc__" type="text/javascript" data-cnt="1">
+        ((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_218600']=__lxGc__['s']['_218600']||{'b':{}})['b']['_664919']={'i':__lxGc__.b++};
+    </script>
+</div>
+<div class="only-mobile center" style="min-height: 200px;">
+    <div id="lx_662163" data-cnt="1" class="__lxG__multi __lxG__multi_lx_662163"></div><script class="__lxGc__" type="text/javascript" data-cnt="1">
+        ((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_218600']=__lxGc__['s']['_218600']||{'b':{}})['b']['_662163']={'i':__lxGc__.b++};
+    </script>
+</div>
+<div class="flexcenter txt" id="gluefixer" style="min-height: 2450px"><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id41108"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 41108</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 41
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;41108&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 80</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id41108"><img loading="lazy" width="211" height="211" src="./Twodoku_files/41108.gif" title="Multi-Sudoku №41108" alt="Multi-Sudoku №41108"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2018-09-13 04:40</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;41108&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 16:20</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>47%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id121017"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 121017</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 36
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;121017&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 71</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id121017"><img loading="lazy" width="211" height="211" src="./Twodoku_files/121017.gif" title="Multi-Sudoku №121017" alt="Multi-Sudoku №121017"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-08-18 00:32</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;121017&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 18:40</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>45%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id209450"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 209450</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 32
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;209450&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 45</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id209450"><img loading="lazy" width="211" height="211" src="./Twodoku_files/209450.gif" title="Multi-Sudoku №209450" alt="Multi-Sudoku №209450"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2021-04-20 00:12</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;209450&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 16:37</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>49%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id16826"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 16826</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 32
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;16826&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 108</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id16826"><img loading="lazy" width="211" height="211" src="./Twodoku_files/16826.gif" title="Multi-Sudoku №16826" alt="Multi-Sudoku №16826"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2017-11-03 00:00</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;16826&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 20:44</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/1.png" alt="1"> <small>27%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id118011"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 118011</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 32
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;118011&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 67</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id118011"><img loading="lazy" width="211" height="211" src="./Twodoku_files/118011.gif" title="Multi-Sudoku №118011" alt="Multi-Sudoku №118011"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-03-13 00:32</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;118011&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 22:42</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>46%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id162104"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 162104</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 30
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;162104&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 62</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id162104"><img loading="lazy" width="211" height="211" src="./Twodoku_files/162104.gif" title="Multi-Sudoku №162104" alt="Multi-Sudoku №162104"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-04-14 17:09</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;162104&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 20:42</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>53%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id86116"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 86116</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 30
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;86116&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 43</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id86116"><img loading="lazy" width="211" height="211" src="./Twodoku_files/86116.gif" title="Multi-Sudoku №86116" alt="Multi-Sudoku №86116"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2019-07-07 05:40</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;86116&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 18:31</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>39%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id128745"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 128745</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 30
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;128745&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 51</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id128745"><img loading="lazy" width="211" height="211" src="./Twodoku_files/128745.gif" title="Multi-Sudoku №128745" alt="Multi-Sudoku №128745"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-05-04 17:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;128745&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 13:41</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>41%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id262634"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 262634</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 30
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;262634&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 36</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id262634"><img loading="lazy" width="211" height="211" src="./Twodoku_files/262634.gif" title="Multi-Sudoku №262634" alt="Multi-Sudoku №262634"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2021-04-12 02:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;262634&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 15:32</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>39%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id195368"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 195368</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 30
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;195368&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 54</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id195368"><img loading="lazy" width="211" height="211" src="./Twodoku_files/195368.gif" title="Multi-Sudoku №195368" alt="Multi-Sudoku №195368"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x4</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-11-06 19:37</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;195368&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 22:33</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>40%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle pm_solved">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id121160"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 121160</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 58
+            <img width="16" height="16" src="./Twodoku_files/sad.png" alt="Dislikes"> 1</div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;121160&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 120</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id121160"><img loading="lazy" width="211" height="211" src="./Twodoku_files/121160.gif" title="Multi-Sudoku №121160" alt="Multi-Sudoku №121160"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-05-13 00:32</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;121160&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 14:42</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/1.png" alt="1"> <small>23%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id121929"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 121929</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 29
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;121929&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 50</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id121929"><img loading="lazy" width="211" height="211" src="./Twodoku_files/121929.gif" title="Multi-Sudoku №121929" alt="Multi-Sudoku №121929"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-10-23 00:32</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;121929&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 13:56</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/1.png" alt="1"> <small>31%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id120722"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 120722</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 29
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;120722&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 50</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id120722"><img loading="lazy" width="211" height="211" src="./Twodoku_files/120722.gif" title="Multi-Sudoku №120722" alt="Multi-Sudoku №120722"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-09-17 00:32</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;120722&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 15:03</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>39%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id126635"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 126635</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 29
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;126635&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 48</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id126635"><img loading="lazy" width="211" height="211" src="./Twodoku_files/126635.gif" title="Multi-Sudoku №126635" alt="Multi-Sudoku №126635"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x4</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-04-05 11:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;126635&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 22:06</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>42%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id123410"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 123410</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 28
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;123410&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 43</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id123410"><img loading="lazy" width="211" height="211" src="./Twodoku_files/123410.gif" title="Multi-Sudoku №123410" alt="Multi-Sudoku №123410"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x4</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-05-29 01:09</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;123410&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 15:39</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>55%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id127764"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 127764</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 28
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;127764&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 44</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id127764"><img loading="lazy" width="211" height="211" src="./Twodoku_files/127764.gif" title="Multi-Sudoku №127764" alt="Multi-Sudoku №127764"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-03-16 12:37</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;127764&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 11:55</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>34%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id119869"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 119869</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 28
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;119869&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 51</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id119869"><img loading="lazy" width="211" height="211" src="./Twodoku_files/119869.gif" title="Multi-Sudoku №119869" alt="Multi-Sudoku №119869"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x4</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-02-07 09:00</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;119869&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 18:13</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>46%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id126606"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 126606</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 28
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;126606&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 46</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id126606"><img loading="lazy" width="211" height="211" src="./Twodoku_files/126606.gif" title="Multi-Sudoku №126606" alt="Multi-Sudoku №126606"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-04-03 14:37</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;126606&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 16:24</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>40%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id204727"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 204727</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 28
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;204727&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 42</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id204727"><img loading="lazy" width="211" height="211" src="./Twodoku_files/204727.gif" title="Multi-Sudoku №204727" alt="Multi-Sudoku №204727"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-09-20 23:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;204727&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 22:47</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>39%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id159975"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 159975</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 28
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;159975&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 45</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id159975"><img loading="lazy" width="211" height="211" src="./Twodoku_files/159975.gif" title="Multi-Sudoku №159975" alt="Multi-Sudoku №159975"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-07-25 03:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;159975&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 19:45</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>42%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id262891"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 262891</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 28
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;262891&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 41</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id262891"><img loading="lazy" width="211" height="211" src="./Twodoku_files/262891.gif" title="Multi-Sudoku №262891" alt="Multi-Sudoku №262891"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2021-04-06 21:37</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;262891&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 17:39</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>39%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id125683"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 125683</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 28
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;125683&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 43</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id125683"><img loading="lazy" width="211" height="211" src="./Twodoku_files/125683.gif" title="Multi-Sudoku №125683" alt="Multi-Sudoku №125683"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-03-08 22:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;125683&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 16:07</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>44%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id123361"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 123361</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 27
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;123361&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 47</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id123361"><img loading="lazy" width="211" height="211" src="./Twodoku_files/123361.gif" title="Multi-Sudoku №123361" alt="Multi-Sudoku №123361"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-06-06 23:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;123361&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 18:27</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>37%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id224252"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 224252</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 27
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;224252&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 47</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id224252"><img loading="lazy" width="211" height="211" src="./Twodoku_files/224252.gif" title="Multi-Sudoku №224252" alt="Multi-Sudoku №224252"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x4</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-12-29 23:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;224252&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 17:05</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>42%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id124038"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 124038</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 26
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;124038&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 34</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id124038"><img loading="lazy" width="211" height="211" src="./Twodoku_files/124038.gif" title="Multi-Sudoku №124038" alt="Multi-Sudoku №124038"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-03-02 07:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;124038&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 14:18</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>44%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id205968"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 205968</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 26
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;205968&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 51</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id205968"><img loading="lazy" width="211" height="211" src="./Twodoku_files/205968.gif" title="Multi-Sudoku №205968" alt="Multi-Sudoku №205968"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-10-30 17:09</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;205968&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 17:18</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>44%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id269485"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 269485</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 26
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;269485&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 37</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id269485"><img loading="lazy" width="211" height="211" src="./Twodoku_files/269485.gif" title="Multi-Sudoku №269485" alt="Multi-Sudoku №269485"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2021-05-01 12:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;269485&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 14:07</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>36%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id122333"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 122333</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 26
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;122333&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 43</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id122333"><img loading="lazy" width="211" height="211" src="./Twodoku_files/122333.gif" title="Multi-Sudoku №122333" alt="Multi-Sudoku №122333"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-03-11 21:37</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;122333&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 18:11</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>46%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id152286"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 152286</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 26
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;152286&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 40</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id152286"><img loading="lazy" width="211" height="211" src="./Twodoku_files/152286.gif" title="Multi-Sudoku №152286" alt="Multi-Sudoku №152286"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-04-15 05:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;152286&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 21:56</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>40%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id129289"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 129289</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 25
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;129289&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 39</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id129289"><img loading="lazy" width="211" height="211" src="./Twodoku_files/129289.gif" title="Multi-Sudoku №129289" alt="Multi-Sudoku №129289"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-02-25 14:37</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;129289&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 16:37</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>42%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id217912"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 217912</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 25
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;217912&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 41</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id217912"><img loading="lazy" width="211" height="211" src="./Twodoku_files/217912.gif" title="Multi-Sudoku №217912" alt="Multi-Sudoku №217912"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-12-02 01:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;217912&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 14:44</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>40%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id122747"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 122747</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 25
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;122747&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 38</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id122747"><img loading="lazy" width="211" height="211" src="./Twodoku_files/122747.gif" title="Multi-Sudoku №122747" alt="Multi-Sudoku №122747"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x4</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-06-12 12:37</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;122747&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 22:30</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/3.png" alt="3"> <small>59%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id292035"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 292035</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 25
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;292035&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 31</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id292035"><img loading="lazy" width="211" height="211" src="./Twodoku_files/292035.gif" title="Multi-Sudoku №292035" alt="Multi-Sudoku №292035"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x4</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2022-03-27 03:41</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;292035&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 19:59</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>41%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id120300"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 120300</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 25
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;120300&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 41</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id120300"><img loading="lazy" width="211" height="211" src="./Twodoku_files/120300.gif" title="Multi-Sudoku №120300" alt="Multi-Sudoku №120300"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-06-24 00:32</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;120300&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 12:18</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>44%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id123158"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 123158</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 25
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;123158&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 36</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id123158"><img loading="lazy" width="211" height="211" src="./Twodoku_files/123158.gif" title="Multi-Sudoku №123158" alt="Multi-Sudoku №123158"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x3</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-03-03 06:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;123158&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 15:59</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>34%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div><div class="pm_puzzle ">
+    
+    <div class="pm_in_flex">
+    <div><a href="https://en.grandgames.net/multisudoku/id122179"><img width="16" height="16" src="./Twodoku_files/id.png" alt="Likes"> 122179</a></div>
+        <div><img width="16" height="16" src="./Twodoku_files/heart.png" alt="Likes"> 25
+            </div>
+    <div><span class="pointer" onclick="ShowAGTop(&#39;122179&#39;)"><img width="16" height="16" src="./Twodoku_files/solvers.png" title="Times solved" alt="Times solved"> 44</span></div>
+    </div>
+
+    <a href="https://en.grandgames.net/multisudoku/id122179"><img loading="lazy" width="211" height="211" src="./Twodoku_files/122179.gif" title="Multi-Sudoku №122179" alt="Multi-Sudoku №122179"></a>
+
+    
+
+    <div class="pm_in_flex">
+        <div title="The ratio of the drop" onclick="LGMes(&#39;aboutdrop&#39;);" class="pointer"><img src="./Twodoku_files/prob.png" alt="" width="16" height="16"> x4</div>
+        <div><img src="./Twodoku_files/date.png" alt="" width="16" height="16"> 2020-04-12 14:07</div>
+        <div class="pointer" onclick="ShowAGTop(&#39;122179&#39;)"><img src="./Twodoku_files/time.png" alt="" width="16" height="16"> 17:08</div>
+        
+        <div><img title="Difficulty" width="42" height="14" src="./Twodoku_files/2.png" alt="2"> <small>43%</small>
+</div><div title="Type"><img width="16" height="16" src="./Twodoku_files/settings(1).png" alt=""> Twodoku</div>
+    </div>
+
+</div></div><div class="pages"><p> <b>1</b>  <a href="https://en.grandgames.net/index.php?page=2&amp;place=ag&amp;agurl=multisudoku&amp;sdir=twodoku&amp;tip=2"> 2 </a> <a href="https://en.grandgames.net/index.php?page=3&amp;place=ag&amp;agurl=multisudoku&amp;sdir=twodoku&amp;tip=2"> 3 </a> <a href="https://en.grandgames.net/index.php?page=4&amp;place=ag&amp;agurl=multisudoku&amp;sdir=twodoku&amp;tip=2"> 4 </a> <a href="https://en.grandgames.net/index.php?page=5&amp;place=ag&amp;agurl=multisudoku&amp;sdir=twodoku&amp;tip=2"> ► </a></p></div><span id="scroll_to" style="visibility: hidden;"></span>
+<div class="no-mobile center" style="min-height: 250px;">
+    <div id="lx_662157" data-cnt="1" class="__lxG__multi __lxG__multi_lx_662157"></div><script class="__lxGc__" type="text/javascript" data-cnt="1">
+        ((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_218600']=__lxGc__['s']['_218600']||{'b':{}})['b']['_662157']={'i':__lxGc__.b++};
+    </script>
+</div>
+<div class="only-mobile center" style="min-height: 200px;">
+    <div id="lx_664912" data-cnt="1" class="__lxG__multi __lxG__multi_lx_664912"></div><script class="__lxGc__" type="text/javascript" data-cnt="1">
+        ((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_218600']=__lxGc__['s']['_218600']||{'b':{}})['b']['_664912']={'i':__lxGc__.b++};
+    </script>
+</div>
+<div class="new_div_list txt" id="allmissions"><h2>Missions</h2><div style="background-image: url(//grandgames.net/images/missions/761.jpg)">
+    <div class="div_item">
+        <h3><a href="https://en.grandgames.net/missions/dabldoku_h5ch.2">Mission "Tabldotu X5, part 2"</a></h3>
+        <div><img width="16" height="16" src="./Twodoku_files/date(1).png" alt="">2020-02-10  &nbsp;
+            <img width="16" height="16" src="./Twodoku_files/user.png" alt=""><a href="https://en.grandgames.net/user/_gst6907763">_gst6907763</a>
+            &nbsp; <img width="16" height="16" src="./Twodoku_files/tries.png" alt="Stages" title="Stages">8
+        </div>
+        <div><img width="16" height="16" src="./Twodoku_files/count.png" alt="T" title="Unfinished attempts">2
+            <img width="17" height="16" src="./Twodoku_files/star_b.png" alt="B">0
+            <img width="17" height="16" src="./Twodoku_files/star_s.png" alt="S">2
+            <img width="17" height="16" src="./Twodoku_files/star_g.png" alt="G">14</div>
+    </div>
+    <div onclick="location.href=&#39;https://en.grandgames.net/missions/dabldoku_h5ch.2&#39;" style="height:100px; cursor:pointer;"></div>
+</div><div style="background-image: url(//grandgames.net/images/missions/32.jpg)">
+    <div class="div_item">
+        <h3><a href="https://en.grandgames.net/missions/put_samuraya">Mission "Way Of The Samurai"</a></h3>
+        <div><img width="16" height="16" src="./Twodoku_files/date(1).png" alt="">2018-11-25  &nbsp;
+            <img width="16" height="16" src="./Twodoku_files/user.png" alt=""><a href="https://en.grandgames.net/user/memo">Memo</a>
+            &nbsp; <img width="16" height="16" src="./Twodoku_files/tries.png" alt="Stages" title="Stages">54
+        </div>
+        <div><img width="16" height="16" src="./Twodoku_files/count.png" alt="T" title="Unfinished attempts">140
+            <img width="17" height="16" src="./Twodoku_files/star_b.png" alt="B">6
+            <img width="17" height="16" src="./Twodoku_files/star_s.png" alt="S">7
+            <img width="17" height="16" src="./Twodoku_files/star_g.png" alt="G">9</div>
+    </div>
+    <div onclick="location.href=&#39;https://en.grandgames.net/missions/put_samuraya&#39;" style="height:100px; cursor:pointer;"></div>
+</div><div class="no780" style="background-image: url(//grandgames.net/images/missions/855.jpg)">
+    <div class="div_item">
+        <h3><a href="https://en.grandgames.net/missions/reshaem_sudoku">Mission "Solve Sudoku"</a></h3>
+        <div><img width="16" height="16" src="./Twodoku_files/date(1).png" alt="">2020-05-29  &nbsp;
+            <img width="16" height="16" src="./Twodoku_files/user.png" alt=""><a href="https://en.grandgames.net/user/b8831388">B8831388</a>
+            &nbsp; <img width="16" height="16" src="./Twodoku_files/tries.png" alt="Stages" title="Stages">6
+        </div>
+        <div><img width="16" height="16" src="./Twodoku_files/count.png" alt="T" title="Unfinished attempts">7
+            <img width="17" height="16" src="./Twodoku_files/star_b.png" alt="B">4
+            <img width="17" height="16" src="./Twodoku_files/star_s.png" alt="S">3
+            <img width="17" height="16" src="./Twodoku_files/star_g.png" alt="G">4</div>
+    </div>
+    <div onclick="location.href=&#39;https://en.grandgames.net/missions/reshaem_sudoku&#39;" style="height:100px; cursor:pointer;"></div>
+</div></div>
+
+                <div id="gse">
+                    <div class="gcse-search"></div>
+                </div>
+
+            </div>
+
+
+
+            <footer id="footer">
+            <div id="trends"></div>
+            <div class="fnavi">
+                <ul>
+                    <li><a href="https://en.grandgames.net/copyright">For copyright holders </a></li>
+                    <li><a href="https://en.grandgames.net/login">My settings</a></li>
+                </ul>
+            </div>
+
+            <div class="fnavi">
+                <ul>
+                    <li><a href="https://en.grandgames.net/termsofuse/">Terms of use</a></li>
+                    <li><a href="https://en.grandgames.net/contact">Feedback</a></li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="fnavi" id="navi1">
+                <ul>
+                    <li><a href="https://en.grandgames.net/lenta">Feed</a></li>
+                    <li><a href="https://en.grandgames.net/post/451494">Credits</a></li>
+                </ul>
+            </div>
+
+            <div class="fnavi" id="navi2">
+                <a href="https://en.grandgames.net/"><img id="logo_bottom" width="300" height="40" src="./Twodoku_files/gglogo2.png" alt="GrandGames"></a>
+            </div>
+
+            <div id="footertxt"><b>GrandGames.net</b> Games and puzzles online. All rights reserved. © 2011-2022. 
+
+            </div>
+            
+            </footer>
+
+        </div>
+        <div id="left_panel">
+            <nav class="nav">
+                
+                
+                <ul><li class="menu_break pointer">Main sections</li><li id="menu_lenta"><a href="https://en.grandgames.net/lenta/"><img width="16" height="16" src="./Twodoku_files/lenta(1).png" alt="-">Feed</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/lenta/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8">#истории</a></li><li><a href="https://en.grandgames.net/lenta/%D1%8E%D0%BC%D0%BE%D1%80">#юмор</a></li><li><a href="https://en.grandgames.net/lenta/%D1%84%D0%B0%D0%BA%D1%82%D1%8B">#факты</a></li><li><a href="https://en.grandgames.net/lenta/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D1%8B">#рецепты</a></li></ul></li><li id="menu_duels"><a href="https://en.grandgames.net/duels"><img width="16" height="16" src="./Twodoku_files/duels.png" alt="-">Duels</a></li><li id="menu_tournaments"><a href="https://en.grandgames.net/tournaments/"><img width="16" height="16" src="./Twodoku_files/tournaments.png" alt="-">Tournaments</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/tournaments/me">With me</a></li><li><a href="https://en.grandgames.net/tournaments/games">Board Games</a></li></ul></li><li id="menu_missions"><a href="https://en.grandgames.net/missions/"><img width="16" height="16" src="./Twodoku_files/missions.png" alt="-">Missions</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/missions/add">Add a Mission</a></li><li><a href="https://en.grandgames.net/missions/moder">New missions</a></li></ul></li><li id="menu_achievements"><a href="https://en.grandgames.net/achievements"><img width="16" height="16" src="./Twodoku_files/achievements.png" alt="-">Achievements</a></li><li id="menu_craft"><a href="https://en.grandgames.net/craft/"><img width="16" height="16" src="./Twodoku_files/craft.png" alt="-">Craft</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/craft/manage">Item management </a></li><li><a href="https://en.grandgames.net/craft/info/">Encyclopedia</a></li><li><a href="https://en.grandgames.net/craft/market/">Market</a></li><li><a href="https://en.grandgames.net/craft/market/sell">Sell resources</a></li><li><a href="https://en.grandgames.net/craft/inventory">Inventory</a></li><li><a href="https://en.grandgames.net/craft/stickers">My stickers</a></li><li><a href="https://en.grandgames.net/craft/code">Bonus codes</a></li><li><a href="https://en.grandgames.net/craft/sellstat">Sales statistics</a></li><li><a href="https://en.grandgames.net/craft/newitem">Offer an item</a></li><li><a href="https://en.grandgames.net/craft/market/tips">Buy hints at the market</a></li><li><a href="https://en.grandgames.net/craft/lottery">Lottery</a></li><li><a href="https://en.grandgames.net/craft/mining">Mining</a></li><li><a href="https://en.grandgames.net/donate/">Donate</a></li></ul></li><li id="menu_rating"><a href="https://en.grandgames.net/rating/"><img width="16" height="16" src="./Twodoku_files/rating.png" alt="-">Rating</a></li><li id="menu_bestposts"><a href="https://en.grandgames.net/post"><img width="16" height="16" src="./Twodoku_files/bestposts.png" alt="-">The best posts</a></li><li id="menu_daily"><a href="https://en.grandgames.net/daily"><img width="16" height="16" src="./Twodoku_files/daily.png" alt="-">Daily Puzzles</a></li><li id="menu_craftplanet"><a href="https://en.grandgames.net/craft/planet"><img width="16" height="16" src="./Twodoku_files/craftplanet.png" alt="-">Conquering the world</a></li><li class="menu_break">Puzzles</li><li id="menu_ag78"><a href="https://en.grandgames.net/puzzle/"><img width="16" height="16" src="./Twodoku_files/puzzle.png" alt="-">Jigsaw puzzles online</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/puzzle/panoramic">Panoramic</a></li><li><a href="https://en.grandgames.net/puzzle/vertical">Vertical</a></li><li><a href="https://en.grandgames.net/puzzle/rand">Random Jigsaw Puzzle</a></li><li><a href="https://en.grandgames.net/puzzle/upload">Add a Jigsaw Puzzle</a></li><li><a href="https://en.grandgames.net/puzzle/moder">Puzzle moderation</a></li><li><a href="https://en.grandgames.net/puzzle/tags">Tags</a></li><li><a href="https://en.grandgames.net/puzzle/print">Print Puzzles</a></li><li><a href="https://en.grandgames.net/puzzle/tags/forkids">Детские пазлы</a></li><li><a href="https://en.grandgames.net/puzzle/tags/%D0%B3%D0%BE%D1%80%D0%BE%D0%B4">Пазлы города</a></li><li><a href="https://en.grandgames.net/puzzle/tags/%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5">Пазлы животные</a></li><li><a href="https://en.grandgames.net/puzzle/tags/%D0%BF%D0%B5%D0%B9%D0%B7%D0%B0%D0%B6">Пазлы пейзажи</a></li><li><a href="https://en.grandgames.net/puzzle/tags/%D1%86%D0%B2%D0%B5%D1%82%D1%8B">Пазлы цветы </a></li><li><a href="https://en.grandgames.net/puzzle/tags/%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F">Пазлы абстракция</a></li><li><a href="https://en.grandgames.net/puzzle/tags/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%D0%B3%D0%BE%D0%B4">Пазлы Новый год</a></li><li><a href="https://en.grandgames.net/puzzle/tags/%D0%B0%D0%BD%D0%B8%D0%BC%D0%B5">Пазлы Аниме</a></li><li><a href="https://en.grandgames.net/puzzle/rating">Rating</a></li></ul></li><li id="menu_ag128"><a href="https://en.grandgames.net/polipuzzles/"><img width="16" height="16" src="./Twodoku_files/polipuzzles.png" alt="-">Polyomino puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/polipuzzles/play">Random Game</a></li><li><a href="https://en.grandgames.net/polipuzzles/rating">Rating</a></li></ul></li><li id="menu_ag175"><a href="https://en.grandgames.net/filipuzzles/"><img width="16" height="16" src="./Twodoku_files/filipuzzles.png" alt="-">Filipino puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/filipuzzles/play">Random Game</a></li><li><a href="https://en.grandgames.net/filipuzzles/rating">Rating</a></li></ul></li><li id="menu_ag116"><a href="https://en.grandgames.net/fragment/"><img width="16" height="16" src="./Twodoku_files/fragment.png" alt="-">Guess the snippet</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/fragment/play">Random Game</a></li><li><a href="https://en.grandgames.net/fragment/rating">Rating</a></li></ul></li><li id="menu_ag22"><a href="https://en.grandgames.net/belpuzzles/"><img width="16" height="16" src="./Twodoku_files/belpuzzles.png" alt="-">Belarus Puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/belpuzzles/rand">Random Game</a></li><li><a href="https://en.grandgames.net/belpuzzles/rating">Rating</a></li></ul></li><li id="menu_ag129"><a href="https://en.grandgames.net/puzzles/"><img width="16" height="16" src="./Twodoku_files/puzzles.png" alt="-">Classic puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/puzzles/play">Random Game</a></li><li><a href="https://en.grandgames.net/puzzles/rating">Rating</a></li></ul></li><li id="menu_ag132"><a href="https://en.grandgames.net/jigsaw/"><img width="16" height="16" src="./Twodoku_files/jigsaw.png" alt="-">Floating Puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/jigsaw/play">Random Game</a></li><li><a href="https://en.grandgames.net/jigsaw/rating">Rating</a></li></ul></li><li id="menu_ag173"><a href="https://en.grandgames.net/shiftpuzzles/"><img width="16" height="16" src="./Twodoku_files/shiftpuzzles.png" alt="-">Shifters Puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/shiftpuzzles/play">Random Game</a></li><li><a href="https://en.grandgames.net/shiftpuzzles/rating">Rating</a></li></ul></li><li id="menu_ag32"><a href="https://en.grandgames.net/multipuzzles/"><img width="16" height="16" src="./Twodoku_files/multipuzzles.png" alt="-">Multi-Puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/multipuzzles/play">Random Game</a></li><li><a href="https://en.grandgames.net/multipuzzles/rating">Rating</a></li></ul></li><li id="menu_ag1"><a href="https://en.grandgames.net/game15/"><img width="16" height="16" src="./Twodoku_files/game15.png" alt="-">Game 15</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/game15/rand">Random Game</a></li><li><a href="https://en.grandgames.net/game15/rating">Rating</a></li></ul></li><li class="menu_break">Mixed Puzzles</li><li id="menu_ag47"><a href="https://en.grandgames.net/nonograms/"><img width="16" height="16" src="./Twodoku_files/nonograms.png" alt="-">Nonograms</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/nonograms/small">For beginners</a></li><li><a href="https://en.grandgames.net/nonograms/chernobelye">Black and White</a></li><li><a href="https://en.grandgames.net/nonograms/color">Multi-color</a></li><li><a href="https://en.grandgames.net/nonograms/rebus">Rebuses</a></li><li><a href="https://en.grandgames.net/nonograms/fast">Speedrun (no hints or preview available)</a></li><li><a href="https://en.grandgames.net/nonograms/random">Random Nonogram</a></li><li><a href="https://en.grandgames.net/nonograms/new">Create a Nonogram</a></li><li><a href="https://en.grandgames.net/nonograms/moder">Nonogram Moderation </a></li><li><a href="https://en.grandgames.net/nonograms/rules">How to solve</a></li><li><a href="https://en.grandgames.net/nonograms/rating">Rating</a></li></ul></li><li id="menu_ag208"><a href="https://en.grandgames.net/chinapics/"><img width="16" height="16" src="./Twodoku_files/chinapics.png" alt="-">China Pics</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/chinapics/play">Random Game</a></li><li><a href="https://en.grandgames.net/chinapics/rating">Rating</a></li></ul></li><li id="menu_ag131"><a href="https://en.grandgames.net/picross/"><img width="16" height="16" src="./Twodoku_files/picross.png" alt="-">Picross</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/picross/play">Random Game</a></li><li><a href="https://en.grandgames.net/picross/rating">Rating</a></li></ul></li><li id="menu_ag8"><a href="https://en.grandgames.net/mosaic/"><img width="16" height="16" src="./Twodoku_files/mosaic.png" alt="-">Fill-a-Pix</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/mosaic/rules">How to solve</a></li><li><a href="https://en.grandgames.net/mosaic/rand">Random Game</a></li><li><a href="https://en.grandgames.net/mosaic/rating">Rating</a></li></ul></li><li id="menu_ag94"><a href="https://en.grandgames.net/shifters/"><img width="16" height="16" src="./Twodoku_files/shifters.png" alt="-">Shifters</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/shifters/play">Random Game</a></li><li><a href="https://en.grandgames.net/shifters/rating">Rating</a></li></ul></li><li id="menu_ag21"><a href="https://en.grandgames.net/belcross/"><img width="16" height="16" src="./Twodoku_files/belcross.png" alt="-">Belarus Nonograms</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/belcross/rand">Random Game</a></li><li><a href="https://en.grandgames.net/belcross/rating">Rating</a></li></ul></li><li id="menu_ag77"><a href="https://en.grandgames.net/filippinskie/"><img width="16" height="16" src="./Twodoku_files/filippinskie.png" alt="-">Link-a-Pix</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/filippinskie/rand">Random Game</a></li><li><a href="https://en.grandgames.net/filippinskie/rating">Rating</a></li></ul></li><li class="menu_break">Graphic Puzzles</li><li id="menu_ag96"><a href="https://en.grandgames.net/mahjong/"><img width="16" height="16" src="./Twodoku_files/mahjong.png" alt="-">Mahjong</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/mahjong/play">Random Game</a></li><li><a href="https://en.grandgames.net/mahjong/connect">Mahjong Connect</a></li><li><a href="https://en.grandgames.net/mahjong/cvety">Mahjong Flowers</a></li><li><a href="https://en.grandgames.net/mahjong/comics">Comic Book  Mahjong</a></li><li><a href="https://en.grandgames.net/mahjong/food">Food Mahjong</a></li><li><a href="https://en.grandgames.net/mahjong/zveri">Animals Mahjong </a></li><li><a href="https://en.grandgames.net/mahjong/minecraft">Minecraft Mahjong </a></li><li><a href="https://en.grandgames.net/mahjong/people">People Mahjong</a></li><li><a href="https://en.grandgames.net/mahjong/wedding">Wedding Mahjong </a></li><li><a href="https://en.grandgames.net/mahjong/flowers">Plants and flowers</a></li><li><a href="https://en.grandgames.net/mahjong/animals">Mahjong Animals</a></li><li><a href="https://en.grandgames.net/mahjong/logos">Mahjong logos</a></li><li><a href="https://en.grandgames.net/mahjong/dynasty">Shanghai dynasty</a></li><li><a href="https://en.grandgames.net/mahjong/faces">Mahjong Faces</a></li><li><a href="https://en.grandgames.net/mahjong/flags">Mahjong Flags</a></li><li><a href="https://en.grandgames.net/mahjong/butterfly">Butterfly Mahjong </a></li><li><a href="https://en.grandgames.net/mahjong/shanghai">Shanghai Mahjong</a></li><li><a href="https://en.grandgames.net/mahjong/cards">Cards Mahjong</a></li><li><a href="https://en.grandgames.net/mahjong/fruit">Fruit and Vegetables Mahjong</a></li><li><a href="https://en.grandgames.net/mahjong/rating">Rating</a></li></ul></li><li id="menu_ag33"><a href="https://en.grandgames.net/pasjans/"><img width="16" height="16" src="./Twodoku_files/pasjans.png" alt="-">Solitaire Online</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/pasjans/play">Random Game</a></li><li><a href="https://en.grandgames.net/pasjans/soliter">Sollitaire Game</a></li><li><a href="https://en.grandgames.net/pasjans/pauk">Spider Solitaire</a></li><li><a href="https://en.grandgames.net/pasjans/kosynka">Klondike Solitaire</a></li><li><a href="https://en.grandgames.net/pasjans/kovrik">Carpet Solitaire </a></li><li><a href="https://en.grandgames.net/pasjans/scorpion">Scorpion Solitaire</a></li><li><a href="https://en.grandgames.net/pasjans/pauchiha">Spiderette Solitaire</a></li><li><a href="https://en.grandgames.net/pasjans/ukraine">Ukrainian Solitaire</a></li><li><a href="https://en.grandgames.net/pasjans/rating">Rating</a></li></ul></li><li id="menu_ag117"><a href="https://en.grandgames.net/memory/"><img width="16" height="16" src="./Twodoku_files/memory.png" alt="-">Memory game</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/memory/play">Random Game</a></li><li><a href="https://en.grandgames.net/memory/rating">Rating</a></li></ul></li><li id="menu_ag134"><a href="https://en.grandgames.net/sokoban/"><img width="16" height="16" src="./Twodoku_files/sokoban.png" alt="-">Sokoban</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/sokoban/play">Random Game</a></li><li><a href="https://en.grandgames.net/sokoban/rating">Rating</a></li></ul></li><li id="menu_ag148"><a href="https://en.grandgames.net/four/"><img width="16" height="16" src="./Twodoku_files/four.png" alt="-">Disconnect Four</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/four/play">Random Game</a></li><li><a href="https://en.grandgames.net/four/rating">Rating</a></li></ul></li><li id="menu_ag119"><a href="https://en.grandgames.net/three/"><img width="16" height="16" src="./Twodoku_files/three.png" alt="-">Three in a row</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/three/play">Random Game</a></li><li><a href="https://en.grandgames.net/three/rating">Rating</a></li></ul></li><li id="menu_ag123"><a href="https://en.grandgames.net/polimino/"><img width="16" height="16" src="./Twodoku_files/polimino.png" alt="-">Polyomino</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/polimino/play">Random Game</a></li><li><a href="https://en.grandgames.net/polimino/tetromino">Tetromino</a></li><li><a href="https://en.grandgames.net/polimino/pentomino">Pentamino</a></li><li><a href="https://en.grandgames.net/polimino/hexomino">Hexamino</a></li><li><a href="https://en.grandgames.net/polimino/heptomino">Heptomino</a></li><li><a href="https://en.grandgames.net/polimino/rating">Rating</a></li></ul></li><li id="menu_ag198"><a href="https://en.grandgames.net/findfour/"><img width="16" height="16" src="./Twodoku_files/findfour.png" alt="-">Find four</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/findfour/play">Random Game</a></li><li><a href="https://en.grandgames.net/findfour/rating">Rating</a></li></ul></li><li id="menu_ag200"><a href="https://en.grandgames.net/findthree/"><img width="16" height="16" src="./Twodoku_files/findthree.png" alt="-">Find three</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/findthree/play">Random Game</a></li><li><a href="https://en.grandgames.net/findthree/rating">Rating</a></li></ul></li><li id="menu_ag204"><a href="https://en.grandgames.net/nothree/"><img width="16" height="16" src="./Twodoku_files/nothree.png" alt="-">Separate three</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/nothree/play">Random Game</a></li><li><a href="https://en.grandgames.net/nothree/rating">Rating</a></li></ul></li><li id="menu_ag30"><a href="https://en.grandgames.net/raskraski/"><img width="16" height="16" src="./Twodoku_files/raskraski.png" alt="-">Coloring Pages Online</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/raskraski/play">Random Game</a></li><li><a href="https://en.grandgames.net/raskraski/add">Create a Coloring Page</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D0%BA%D0%BE%D1%82">Раскраски коты и кошки</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D0%B4%D0%BB%D1%8F%D0%B4%D0%B5%D0%B2%D0%BE%D1%87%D0%B5%D0%BA">Раскраски для девочек</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D0%B4%D0%BB%D1%8F%D0%BC%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%D0%BE%D0%B2">Раскраски для мальчиков</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D0%BF%D0%BE%D1%86%D0%B8%D1%84%D1%80%D0%B0%D0%BC">Раскраски по цифрам</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D0%BC%D0%B0%D0%B9%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82">Раскраски майнкрафт</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D0%BC%D0%B0%D1%88%D0%B0">Раскраски Маша и Медведь</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D0%BA%D0%BE%D1%82%D0%B5%D0%BD%D0%BE%D0%BA%D0%B3%D0%B0%D0%B2">Котенок Гав</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0">Раскраски собака</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D0%BB%D0%B0">Раскраски Мандала</a></li><li><a href="https://en.grandgames.net/raskraski/tags/%D1%86%D0%B2%D0%B5%D1%82%D1%8B">Раскраска цветы</a></li><li><a href="https://en.grandgames.net/raskraski/rating">Rating</a></li></ul></li><li id="menu_ag177"><a href="https://en.grandgames.net/maze/"><img width="16" height="16" src="./Twodoku_files/maze.png" alt="-">Maze</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/maze/play">Random Game</a></li><li><a href="https://en.grandgames.net/maze/rating">Rating</a></li></ul></li><li id="menu_ag149"><a href="https://en.grandgames.net/differences/"><img width="16" height="16" src="./Twodoku_files/differences.png" alt="-">Find Differences</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/differences/play">Random Game</a></li><li><a href="https://en.grandgames.net/differences/add">To add a puzzle</a></li><li><a href="https://en.grandgames.net/differences/rating">Rating</a></li></ul></li><li id="menu_ag152"><a href="https://en.grandgames.net/chesspuzzles/"><img width="16" height="16" src="./Twodoku_files/chesspuzzles.png" alt="-">Chess problems</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/chesspuzzles/mate1">Mate in 1 move</a></li><li><a href="https://en.grandgames.net/chesspuzzles/mate2">Checkmate in 2 moves</a></li><li><a href="https://en.grandgames.net/chesspuzzles/mate3">Checkmate in 3 moves</a></li><li><a href="https://en.grandgames.net/chesspuzzles/play">Random Game</a></li><li><a href="https://en.grandgames.net/chesspuzzles/rating">Rating</a></li></ul></li><li class="menu_break">Numeric Puzzles</li><li id="menu_ag210"><a href="https://en.grandgames.net/nurikabe/"><img width="16" height="16" src="./Twodoku_files/nurikabe.png" alt="-">Nurikabe</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/nurikabe/play">Random Game</a></li><li><a href="https://en.grandgames.net/nurikabe/rating">Rating</a></li></ul></li><li id="menu_ag212"><a href="https://en.grandgames.net/nurikabepairs/"><img width="16" height="16" src="./Twodoku_files/nurikabepairs.png" alt="-">Pairs Nurikabe</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/nurikabepairs/play">Random Game</a></li><li><a href="https://en.grandgames.net/nurikabepairs/rating">Rating</a></li></ul></li><li id="menu_ag95"><a href="https://en.grandgames.net/lightup/"><img width="16" height="16" src="./Twodoku_files/lightup.png" alt="-">Light Up</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/lightup/play">Random Game</a></li><li><a href="https://en.grandgames.net/lightup/rating">Rating</a></li></ul></li><li id="menu_ag220"><a href="https://en.grandgames.net/chinawall/"><img width="16" height="16" src="./Twodoku_files/chinawall.png" alt="-">Wall of China</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/chinawall/play">Random Game</a></li><li><a href="https://en.grandgames.net/chinawall/rating">Rating</a></li></ul></li><li id="menu_ag218"><a href="https://en.grandgames.net/wolves/"><img width="16" height="16" src="./Twodoku_files/wolves.png" alt="-">Sheeps and Wolves</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/wolves/play">Random Game</a></li><li><a href="https://en.grandgames.net/wolves/rating">Rating</a></li></ul></li><li id="menu_ag181"><a href="https://en.grandgames.net/arrows/"><img width="16" height="16" src="./Twodoku_files/arrows.png" alt="-">Arrows</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/arrows/play">Random Game</a></li><li><a href="https://en.grandgames.net/arrows/rating">Rating</a></li></ul></li><li id="menu_ag183"><a href="https://en.grandgames.net/bridges/"><img width="16" height="16" src="./Twodoku_files/bridges.png" alt="-">Bridges</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/bridges/play">Random Game</a></li><li><a href="https://en.grandgames.net/bridges/rating">Rating</a></li></ul></li><li id="menu_ag185"><a href="https://en.grandgames.net/windrose/"><img width="16" height="16" src="./Twodoku_files/windrose.png" alt="-">Wind Rose</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/windrose/play">Random Game</a></li><li><a href="https://en.grandgames.net/windrose/rating">Rating</a></li></ul></li><li id="menu_ag179"><a href="https://en.grandgames.net/skyscrapers/"><img width="16" height="16" src="./Twodoku_files/skyscrapers.png" alt="-">Skyscrapers</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/skyscrapers/play">Random Game</a></li><li><a href="https://en.grandgames.net/skyscrapers/rating">Rating</a></li></ul></li><li id="menu_ag206"><a href="https://en.grandgames.net/kakurasu/"><img width="16" height="16" src="./Twodoku_files/kakurasu.png" alt="-">Kakurasu</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/kakurasu/play">Random Game</a></li><li><a href="https://en.grandgames.net/kakurasu/rating">Rating</a></li></ul></li><li id="menu_ag202"><a href="https://en.grandgames.net/kuromasu/"><img width="16" height="16" src="./Twodoku_files/kuromasu.png" alt="-">Kuromasu</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/kuromasu/play">Random Game</a></li><li><a href="https://en.grandgames.net/kuromasu/rating">Rating</a></li></ul></li><li id="menu_ag214"><a href="https://en.grandgames.net/gridten/"><img width="16" height="16" src="./Twodoku_files/gridten.png" alt="-">Grid Ten</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/gridten/play">Random Game</a></li><li><a href="https://en.grandgames.net/gridten/rating">Rating</a></li></ul></li><li id="menu_ag216"><a href="https://en.grandgames.net/binairo/"><img width="16" height="16" src="./Twodoku_files/binairo.png" alt="-">Binary Puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/binairo/play">Random Game</a></li><li><a href="https://en.grandgames.net/binairo/rating">Rating</a></li></ul></li><li id="menu_ag7"><a href="https://en.grandgames.net/hitori/"><img width="16" height="16" src="./Twodoku_files/hitori.png" alt="-">Hitori</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/hitori/rand">Random Game</a></li><li><a href="https://en.grandgames.net/hitori/rating">Rating</a></li></ul></li><li id="menu_ag2"><a href="https://en.grandgames.net/kakuro/"><img width="16" height="16" src="./Twodoku_files/kakuro.png" alt="-">Kakuro</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/kakuro/rand">Random Game</a></li><li><a href="https://en.grandgames.net/kakuro/rating">Rating</a></li></ul></li><li id="menu_ag171"><a href="https://en.grandgames.net/ships/"><img width="16" height="16" src="./Twodoku_files/ships.png" alt="-">Sea battle</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/ships/play">Random Game</a></li><li><a href="https://en.grandgames.net/ships/rating">Rating</a></li></ul></li><li id="menu_ag164"><a href="https://en.grandgames.net/mines/"><img width="16" height="16" src="./Twodoku_files/mines.png" alt="-">Minesweeper</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/mines/play">Random Game</a></li><li><a href="https://en.grandgames.net/mines/rating">Rating</a></li></ul></li><li id="menu_ag168"><a href="https://en.grandgames.net/clouds/"><img width="16" height="16" src="./Twodoku_files/clouds.png" alt="-">Clouds</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/clouds/play">Random Game</a></li><li><a href="https://en.grandgames.net/clouds/rating">Rating</a></li></ul></li><li id="menu_ag166"><a href="https://en.grandgames.net/tents/"><img width="16" height="16" src="./Twodoku_files/tents.png" alt="-">Tents</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/tents/play">Random Game</a></li><li><a href="https://en.grandgames.net/tents/rating">Rating</a></li></ul></li><li class="menu_break">Sudoku</li><li id="menu_ag193"><a href="https://en.grandgames.net/sudokucenter/"><img width="16" height="16" src="./Twodoku_files/sudokucenter.png" alt="-">Sudoku Center</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/sudokucenter/play">Random Game</a></li><li><a href="https://en.grandgames.net/sudokucenter/rating">Rating</a></li></ul></li><li id="menu_ag195"><a href="https://en.grandgames.net/argyle/"><img width="16" height="16" src="./Twodoku_files/argyle.png" alt="-">Argyle Sudoku</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/argyle/play">Random Game</a></li><li><a href="https://en.grandgames.net/argyle/rating">Rating</a></li></ul></li><li id="menu_ag10" class="expanded"><a href="https://en.grandgames.net/multisudoku/"><img width="16" height="16" src="./Twodoku_files/multisudoku.png" alt="-">Multi-sudoku</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/multisudoku/sudoku">Sudoku</a></li><li><a href="https://en.grandgames.net/multisudoku/twodoku">Twodoku</a></li><li><a href="https://en.grandgames.net/multisudoku/rand">Random Game</a></li><li><a href="https://en.grandgames.net/multisudoku/doubledoku">Doubledoku</a></li><li><a href="https://en.grandgames.net/multisudoku/samurai">Samurai Sudoku </a></li><li><a href="https://en.grandgames.net/multisudoku/triple">Triple Sudoku</a></li><li><a href="https://en.grandgames.net/multisudoku/flower">Flower Sudoku</a></li><li><a href="https://en.grandgames.net/multisudoku/sohei">Sohei Sudoku</a></li><li><a href="https://en.grandgames.net/multisudoku/butterfly">Butterfly Sudoku</a></li><li><a href="https://en.grandgames.net/multisudoku/troynik">T-Joint Sudoku</a></li><li><a href="https://en.grandgames.net/multisudoku/sudokucross">Cross Sudoku</a></li><li><a href="https://en.grandgames.net/multisudoku/rating">Rating</a></li></ul></li><li id="menu_ag189"><a href="https://en.grandgames.net/windoku/"><img width="16" height="16" src="./Twodoku_files/windoku.png" alt="-">Windoku</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/windoku/play">Random Game</a></li><li><a href="https://en.grandgames.net/windoku/rating">Rating</a></li></ul></li><li id="menu_ag191"><a href="https://en.grandgames.net/sudokukiller/"><img width="16" height="16" src="./Twodoku_files/sudokukiller.png" alt="-">Sudoku Killer</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/sudokukiller/play">Random Game</a></li><li><a href="https://en.grandgames.net/sudokukiller/rating">Rating</a></li></ul></li><li id="menu_ag160"><a href="https://en.grandgames.net/sudoku/"><img width="16" height="16" src="./Twodoku_files/sudoku.png" alt="-">Sudoku</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/sudoku/hard">Hard Sudoku</a></li><li><a href="https://en.grandgames.net/sudoku/play">Random Game</a></li><li><a href="https://en.grandgames.net/sudoku/help">Help</a></li><li><a href="https://en.grandgames.net/sudoku/rating">Rating</a></li></ul></li><li id="menu_ag187"><a href="https://en.grandgames.net/sudokux/"><img width="16" height="16" src="./Twodoku_files/sudokux.png" alt="-">Sudoku X</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/sudokux/play">Random Game</a></li><li><a href="https://en.grandgames.net/sudokux/rating">Rating</a></li></ul></li><li class="menu_break">Word Puzzles</li><li id="menu_ag68"><a href="https://en.grandgames.net/klyuchvordy/"><img width="16" height="16" src="./Twodoku_files/klyuchvordy.png" alt="-">Cipher crosswords</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/klyuchvordy/rand">Random Game</a></li><li><a href="https://en.grandgames.net/klyuchvordy/rating">Rating</a></li></ul></li><li id="menu_ag64"><a href="https://en.grandgames.net/scan/"><img width="16" height="16" src="./Twodoku_files/scan.png" alt="-">Arrowords</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/scan/play">Random Game</a></li><li><a href="https://en.grandgames.net/scan/rating">Rating</a></li></ul></li><li id="menu_ag58"><a href="https://en.grandgames.net/filvordy/"><img width="16" height="16" src="./Twodoku_files/filvordy.png" alt="-">Snaking puzzles</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/filvordy/rand">A random snaking puzzle</a></li><li><a href="https://en.grandgames.net/filvordy/rating">Rating</a></li></ul></li><li id="menu_ag157"><a href="https://en.grandgames.net/cross/"><img width="16" height="16" src="./Twodoku_files/cross.png" alt="-">Crosswords</a><div class="menu_expander"></div><ul class="submenu"><li><a href="https://en.grandgames.net/cross/play">Random Game</a></li><li><a href="https://en.grandgames.net/cross/pomoshchnik">Crossword Assistant</a></li><li><a href="https://en.grandgames.net/cross/rating">Rating</a></li></ul></li><li class="menu_break pointer">Sections</li><li id="menu_takeprize"><a href="https://en.grandgames.net/takeprize"><img width="16" height="16" src="./Twodoku_files/takeprize.png" alt="-">Collect the prize</a></li><li id="menu_premium"><a href="https://en.grandgames.net/premium"><img width="16" height="16" src="./Twodoku_files/premium.png" alt="-">Premium account</a></li><li id="menu_donate"><a href="https://en.grandgames.net/donate/"><img width="16" height="16" src="./Twodoku_files/donate.png" alt="-">Donate</a></li><li id="menu_slovar"><a href="https://en.grandgames.net/slovo/"><img width="16" height="16" src="./Twodoku_files/slovar.png" alt="-">Vocabulary</a></li><li id="menu_publics"><a href="https://en.grandgames.net/public/"><img width="16" height="16" src="./Twodoku_files/publics.png" alt="-">Communities</a></li><li id="menu_forum"><a href="https://en.grandgames.net/forum"><img width="16" height="16" src="./Twodoku_files/forum.png" alt="-">Forum</a></li><li id="menu_info"><a href="https://en.grandgames.net/info/"><img width="16" height="16" src="./Twodoku_files/info.png" alt="-">Info</a></li><li id="menu_login"><a href="https://en.grandgames.net/login"><img width="16" height="16" src="./Twodoku_files/login.png" alt="-">Log in</a></li><li id="menu_reg"><a href="https://en.grandgames.net/reg"><img width="16" height="16" src="./Twodoku_files/reg(1).png" alt="-">Sign up</a></li><li id="menu_generator"><a href="https://en.grandgames.net/generator"><img width="16" height="16" src="./Twodoku_files/generator.png" alt="-">Puzzle generator</a></li><li class="menu_break"><a href="https://en.grandgames.net/online/">Board Games</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/chess/">Chess</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/kchess/">Gothic Chess</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/draughts/">Checkers</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/poddavki/">A giveaway game</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/chesckers/">Chesckers</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/antichess/">Anti Chess</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/checkers/">English draughts</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/fisherchess/">Chess960</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/gomoku/">Gomoku</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/connect6/">Connect6</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/superchess/">Super Chess</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/gamepuzzles/">Jigsaw puzzle game</a></li><li><img src="./Twodoku_files/online.png" alt="-" width="16" height="16"> <a href="https://en.grandgames.net/online/archive/">Games Archive</a></li></ul>
+                
+                <script>
+                    if ($('#menu_ag10')!==null) {
+                        $('#menu_ag10').addClass('expanded');
+
+                    }
+                </script>
+                
+
+            </nav>
+        </div>
+        <div id="right_panel">
+
+
+            
+
+            <div class="in_rignt">
+                <div class="rblock_t"><a href="https://en.grandgames.net/rating/39">Top month players</a></div><table id="topmonthplayers" style="width:100%;" class="pointer"><tbody><tr><td><img src="./Twodoku_files/user2.png" alt=""> Tanyushecka</td><td><img src="./Twodoku_files/user2.png" alt=""> AliciaLial</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> 16j15</td><td><img src="./Twodoku_files/user2.png" alt=""> NATAKAPA</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> nnnn</td><td><img src="./Twodoku_files/user2.png" alt=""> Oxania</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> ilyaa</td><td><img src="./Twodoku_files/user2.png" alt=""> MiaColucci</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> Meduzia</td><td><img src="./Twodoku_files/user2.png" alt=""> iris8</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> danik</td><td><img src="./Twodoku_files/user2.png" alt=""> milutin03</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> njgjkm1</td><td><img src="./Twodoku_files/user2.png" alt=""> irinakarsanova</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> mikl</td><td><img src="./Twodoku_files/user2.png" alt=""> Perreira</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> t98743235</td><td><img src="./Twodoku_files/user2.png" alt=""> 123</td></tr><tr><td><img src="./Twodoku_files/user2.png" alt=""> Panda77</td><td><img src="./Twodoku_files/user2.png" alt=""> corsica</td></tr></tbody></table>
+                
+                
+                <div style="background-image: url(//grandgames.net/pics/bestposts/550672.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/550672&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/550672">Ого, мой первый пост в 2022</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/550577.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/550577&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/550577">На страницах пазлов переработан интерфейс блока выбора...</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/549706.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/549706&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/549706">-- Гена, а можно я у тебя в зоопарке работать буду?</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/549111.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/549111&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/549111">Уважаемые игроки...</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/547347.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/547347&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/547347">Статистика за 2022-03-27</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/545356.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/545356&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/545356">На сегодняшний день - уже не актуально</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/544737.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/544737&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/544737">С 8 Мврта!</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/543916.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/543916&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/543916">Post #543916</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/543806.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/543806&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/543806">Post #543806</a>
+</div>
+</div><div style="background-image: url(//grandgames.net/pics/bestposts/543687.jpg);height:135px;cursor:pointer;margin-bottom:5px;" onclick="location.href=&#39;https://en.grandgames.net/post/543687&#39;">
+<div style="font-weight: bold;padding:10px;background-color: rgba(0,0,0,0.5);">
+    <a style="color: white;" href="https://en.grandgames.net/post/543687">Post #543687</a>
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+
+<link type="text/css" rel="stylesheet" media="all" href="./Twodoku_files/pagefilter.css"><script src="./Twodoku_files/pagefilter.js"></script>
+<script>
+    CheckFreeSpace();
+</script>
+<div id="ajaxtags" style="display:none;position:absolute;">
+    <select id="ajaxtagslist" size="5" onchange="SetCurTag(this);">
+    </select>
+</div>
+
+<script type="text/javascript" src="./Twodoku_files/facebox.js"></script>
+<div id="wsmes" style="display: none;" onclick="jQuery(this).hide();">У вас новое сообщение!</div>
+<div id="fixedscroll">
+    <div id="fixedscroll_in">:)</div>
+</div>
+
+
+<div id="sucreturn" onclick="MinExp()">
+    Return to a minimized window
+</div>
+
+
+
+
+<div id="nfsblock">
+    <img id="nfscloser" src="./Twodoku_files/close.png" onclick="NFSClose();" alt="Close" title="Close">
+    <div id="nfsin">
+    </div>
+</div>
+
+<script>
+
+IsGameStarted=true;
+
+</script>
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(45855228, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45855228" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+<script defer="" src="./Twodoku_files/bottom.js"></script>
+<script defer="" type="text/javascript" src="./Twodoku_files/share42_2.js"></script>
+<script>
+
+
+
+
+</script>
+
+<img id="scrollupbut" style="z-index: 100; position: fixed; top: 100vh; left: 100vw; margin-left: -78px; margin-top: -60px; cursor: pointer; display: none;" onclick="$(&#39;html, body&#39;).animate({scrollTop: 0}, 400);" alt="↑" title="↑" src="./Twodoku_files/scrollup.png">
+
+
+
+</body></html>

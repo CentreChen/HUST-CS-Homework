@@ -1,0 +1,3 @@
+D:\SoftWare\CMake\bin\cmake.exe -E rm -f CMakeFiles\MySudoku.dir/objects.a
+D:\SoftWare\Qt\Qt5.12.12\Tools\mingw730_64\bin\ar.exe qc CMakeFiles\MySudoku.dir/objects.a @CMakeFiles\MySudoku.dir\objects1.rsp
+D:\SoftWare\Qt\Qt5.12.12\Tools\mingw730_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\MySudoku.dir/objects.a -Wl,--no-whole-archive -o MySudoku.exe -Wl,--out-implib,libMySudoku.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MySudoku.dir\linklibs.rsp

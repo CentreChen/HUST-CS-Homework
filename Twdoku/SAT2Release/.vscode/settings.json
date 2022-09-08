@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "fstream": "cpp",
+        "new": "cpp",
+        "*.tcc": "cpp",
+        "functional": "cpp",
+        "*.cnf": "code-text-binary"
+    },
+    "cSpell.words": [
+        "DPLL"
+    ]
+}

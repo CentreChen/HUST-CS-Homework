@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "D:/55447/Documents/CODE/qt/build-MySudoku-Desktop_Qt_5_12_12_MinGW_64_bit-Debug/MySudoku_autogen",
+	"CMAKE_BINARY_DIR" : "D:/55447/Documents/CODE/qt/build-MySudoku-Desktop_Qt_5_12_12_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/55447/Documents/CODE/qt/build-MySudoku-Desktop_Qt_5_12_12_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/55447/Documents/CODE/qt/MySudoku",
+	"CMAKE_SOURCE_DIR" : "D:/55447/Documents/CODE/qt/MySudoku",
+	"INCLUDE_DIR" : "D:/55447/Documents/CODE/qt/build-MySudoku-Desktop_Qt_5_12_12_MinGW_64_bit-Debug/MySudoku_autogen/include",
+	"INPUTS" : [ "D:/55447/Documents/CODE/qt/MySudoku/picture/balloon.jpg" ],
+	"LOCK_FILE" : "D:/55447/Documents/CODE/qt/build-MySudoku-Desktop_Qt_5_12_12_MinGW_64_bit-Debug/CMakeFiles/MySudoku_autogen.dir/AutoRcc_picture_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "picture" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_picture.cpp",
+	"RCC_EXECUTABLE" : "D:/SoftWare/Qt/Qt5.12.12/5.12.12/mingw73_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/55447/Documents/CODE/qt/build-MySudoku-Desktop_Qt_5_12_12_MinGW_64_bit-Debug/CMakeFiles/MySudoku_autogen.dir/AutoRcc_picture_EWIEGA46WW_Used.txt",
+	"SOURCE" : "D:/55447/Documents/CODE/qt/MySudoku/picture.qrc",
+	"VERBOSITY" : 0
+}
